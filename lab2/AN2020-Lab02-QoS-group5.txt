@@ -1,0 +1,128 @@
+Current configuration : 1985 bytes
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec localtime show-timezone
+no service password-encryption
+!
+hostname Switch
+!
+boot-start-marker
+boot-end-marker
+!
+enable password password
+!
+username tom privilege 15 password 0 123123
+username pavlos privilege 15 password 0 123123
+username sean privilege 15 password 0 123123
+username rutger privilege 15 password 0 123123
+!
+!
+aaa new-model
+!
+!
+!
+!
+!
+aaa session-id common
+switch 2 provision ws-c3750g-24ps
+system mtu routing 1500
+!
+!
+!
+mls qos
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+!
+!
+!
+interface GigabitEthernet2/0/1
+ mls qos trust dscp
+!
+interface GigabitEthernet2/0/2
+ mls qos trust dscp
+!
+interface GigabitEthernet2/0/3
+ mls qos trust dscp
+!
+interface GigabitEthernet2/0/4
+!
+interface GigabitEthernet2/0/5
+ mls qos trust dscp
+!
+interface GigabitEthernet2/0/6
+!
+interface GigabitEthernet2/0/7
+!
+interface GigabitEthernet2/0/8
+!
+interface GigabitEthernet2/0/9
+!
+interface GigabitEthernet2/0/10
+!
+interface GigabitEthernet2/0/11
+!
+interface GigabitEthernet2/0/12
+!
+interface GigabitEthernet2/0/13
+!
+interface GigabitEthernet2/0/14
+!
+interface GigabitEthernet2/0/15
+!
+interface GigabitEthernet2/0/16
+!
+interface GigabitEthernet2/0/17
+!
+interface GigabitEthernet2/0/18
+!
+interface GigabitEthernet2/0/19
+!
+interface GigabitEthernet2/0/20
+!
+interface GigabitEthernet2/0/21
+!
+interface GigabitEthernet2/0/22
+!
+interface GigabitEthernet2/0/23
+!
+interface GigabitEthernet2/0/24
+!
+interface GigabitEthernet2/0/25
+!
+interface GigabitEthernet2/0/26
+!
+interface GigabitEthernet2/0/27
+!
+interface GigabitEthernet2/0/28
+!
+interface Vlan1
+ ip address 10.0.1.193 255.255.255.0
+!
+interface Vlan2
+ ip address 10.0.2.193 255.255.255.0
+!
+ip classless
+no ip http server
+no ip http secure-server
+!
+!
+logging 104.145.104.104
+logging 10.0.1.189
+!
+snmp-server community read_only_community RO
+!
+!
+line con 0
+line vty 5 15
+!
+end

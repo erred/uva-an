@@ -1,0 +1,15 @@
+zaza6 {
+    file db.zaza6
+    loop
+    whoami
+    errors
+    log
+}
+
+12.10.in-addr.arpa {
+    file db.12.10.in-addr.arpa
+    loop
+    whoami
+    errors
+    log
+}

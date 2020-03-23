@@ -1,0 +1,14 @@
+$TTL 30
+$ORIGIN zaza6.
+@   IN SOA zaza6. admin.zaza6 0000000001 30 30 360000 30
+
+@           IN A 10.12.0.0
+zaza        IN A 10.12.0.1
+juniper     IN A 10.12.0.2
+hp          IN A 10.12.0.3
+cisco       IN A 10.12.0.4
+
+nevers      IN A 10.12.1.1
+reims       IN A 10.12.2.1
+meltz       IN A 10.12.3.1
+brest       IN A 10.12.4.1

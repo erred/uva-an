@@ -1,0 +1,34 @@
+sudo locale-gen nl_NL.UTF-8
+
+Install the software switch:
+
+git clone https://github.com/p4lang/behavioral-model.git
+cd behavioral-model/
+./install_deps.sh
+./autogen.sh
+./configure
+make
+sudo make install
+cd ..
+
+Install the P4 compiler. 
+git clone https://github.com/p4lang/p4c-bm.git
+cd p4c-bm/
+sudo pip install -r requirements.txt
+sudo python setup.py install
+
+
+Sometimes necessary to avoid having to log out. 
+sudo ldconfig
+
+Install Scapy. 
+sudo apt install python-scapy
+sudo apt install python-ipaddr
+
+
+Install the latest stable version of Wireshark. 
+sudo add-apt-repository ppa:wireshark-dev/stable
+sudo apt update
+sudo apt install wireshark-gtk
+sudo apt install tshark
+

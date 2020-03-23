@@ -1,0 +1,4 @@
+table_set_default ipv4_forwarding_table drop_packet
+table_add ipv4_forwarding_table set_egress 10.0.0.0/24 => 1
+table_add ipv4_forwarding_table set_egress 10.0.0.0/8 => 2
+table_add ipv4_forwarding_table set_egress 10.0.0.0/16 => 3

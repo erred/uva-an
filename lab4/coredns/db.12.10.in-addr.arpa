@@ -1,0 +1,32 @@
+$TTL 30
+$ORIGIN 12.10.in-addr.arpa.
+@   IN SOA zaza6. admin.zaza6 0000000001 30 30 360000 30
+
+0.0 IN PTR internal.zaza6.
+1.0 IN PTR zaza.zaza6.
+2.0 IN PTR juniper.zaza6.
+3.0 IN PTR hp.zaza6.
+4.0 IN PTR cisco.zaza6.
+
+9.0  IN PTR zaza-hp.p2p.zaza6.
+10.0 IN PTR hp-zaza.p2p.zaza6.
+13.0 IN PTR zaza-cisco.p2p.zaza6.
+14.0 IN PTR cisco-zaza.p2p.zaza6.
+17.0 IN PTR juniper-hp.p2p.zaza6.
+18.0 IN PTR hp-juniper.p2p.zaza6.
+21.0 IN PTR juniper-cisco.p2p.zaza6.
+22.0 IN PTR cisco-juniper.p2p.zaza6.
+25.0 IN PTR hp-nevers.p2p.zaza6.
+26.0 IN PTR nevers-hp.p2p.zaza6.
+29.0 IN PTR hp-reims.p2p.zaza6.
+30.0 IN PTR reims-hp.p2p.zaza6.
+33.0 IN PTR cisco-meltz.p2p.zaza6.
+34.0 IN PTR meltz-cisco.p2p.zaza6.
+37.0 IN PTR cisco-brest.p2p.zaza6.
+38.0 IN PTR brest-cisco.p2p.zaza6.
+
+
+1 IN PTR nevers.zaza6.
+2 IN PTR reims.zaza6.
+3 IN PTR meltz.zaza6
+4 IN PTR brest.zaza6
